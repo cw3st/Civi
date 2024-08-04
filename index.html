@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="civitab.png" />
+    <title>Civi Bookings</title>
+    <link rel="stylesheet" href="civibooks.css" />
+    <script src="civibooks.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navp">
+        <div>
+          <img src="civi logo.png" alt="img" class="civilogo" />
+        </div>
+        <div class="navd2">
+          <a href="" class="navd2i">Flights</a>
+          <a href="" class="nav2dii">Hotels</a>
+          <a href="" class="nav2diii">Rides</a>
+          <a href="" class="nav2div">Covid-19 Info</a>
+          <a href="" id="nav2dv">More</a>
+        </div>
+        <div class="navd3">
+          <div id="navd3i">Support</div>
+          <img src="nigerian icon.jpg" alt="img" id="ngl" />
+          <div id="navd3ii">NGN</div>
+          <div id="navd3iii">EN</div>
+          <a href="" class="navd3iv">CiviPoints</a>
+          <a href="" class="navd3v">Manage My Bookings</a>
+        </div>
+        <div class="navd4">
+          <a href="" class="navd4i">List Your Property</a>
+        </div>
+        <div onclick="pay()" id="rnav">
+          <svg
+            id="opicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+        <div onclick="cod()" id="srnav">
+          <svg
+            id="exicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div id="rlist">
+        <ul id="Links">
+          <li>Flights</li>
+          <li>Hotels</li>
+          <li>Rides</li>
+          <li>Covid-19 Info</li>
+          <li>Support</li>
+          <li>CiviPoints</li>
+          <li>Manage My Bookings</li>
+          <li>List Your Property</li>
+        </ul>
+      </div>
+      <div class="hd1">
+        Flights
+        <div class="hd1i">.</div>
+      </div>
+      <div class="hd2h">
+        <div class="hd2">
+          <div id="hd2i" onclick="head2()">
+            <img src="plane logo.png" alt="img" class="hd2ic" />
+            <div class="hd2ii">BOOK</div>
+            <span class="hd2iic">FLIGHTS</span>
+          </div>
+          <div id="hd2ii" onclick="head1()">
+            <img src="bed logo.png" alt="" id="hd2iii" />
+            <div id="hd2iv">FIND</div>
+            <span class="hd2ivc">HOTELS</span>
+          </div>
+        </div>
+        <form action="" id="fhd1">
+          <select name="" id="fhd1i">
+            <option value="">Round Trip</option>
+            <option value="">One-way</option>
+            <option value="">Multi-city</option>
+          </select>
+          <select name="" id="fhd1ii">
+            <option value="">1 Passengers</option>
+            <option value="">Adults 12 years</option>
+            <option value="">Children 2-12 years</option>
+            <option value="">Infants 2 years</option>
+          </select>
+          <select name="" id="fhd1iii">
+            <option value="">Economy</option>
+            <option value="">Premium Economy</option>
+            <option value="">Business</option>
+            <option value="">First Class</option>
+          </select>
+          <div id="df">
+            <input type="text" placeholder="From Where" id="df1" />
+            <input type="text" placeholder="To Where" id="df2" />
+            <input type="date" placeholder="Leaving On" id="df3" />
+            <input type="date" placeholder="Returning On" id="df4" />
+            <button type="submit" id="df5">Let's Go</button>
+          </div>
+          <div id="dfi">
+            <input type="button" class="dfi1" />
+            <span class="dfi2">My Dates Are Flexible(+/-3days)</span>
+            <span class="dfi3">Best Value Guaranteed</span>
+          </div>
+          <div id="errordata"></div>
+        </form>
+
+        <form action="" id="fhd2">
+          <span class="fhd2i">WHAT ARE YOU TRAVELLING FOR?</span>
+          <input type="checkbox" required class="fhd2ii" />
+          <span class="fhd2iic">BUSINESS</span>
+          <input type="checkbox" required class="fhd2iii" />
+          <span class="fdh2iiic">LEISURE</span>
+          <span class="fhd2iv">Why this?</span>
+          <div id="df">
+            <input
+              type="text"
+              required
+              id="df11"
+              placeholder="Destination, city or hotel name"
+            />
+            <input type="date" required id="df22" />
+            <input type="date" required id="df33" />
+            <input
+              type="text"
+              required
+              id="df44"
+              placeholder="Rooms and Guests"
+            />
+            <input type="submit" value="Search" id="df55" />
+          </div>
+          <div class="dff">Best Value Guaranteed</div>
+        </form>
+        <div id="errordata"></div>
+      </div>
+    </header>
+    <article>
+      <img src="design 1.png" alt="" class="arti" />
+      <span class="artii">
+        <div class="artiic">Great Deals &amp; Amazing Offers</div>
+        <div class="artiicc">
+          Get personalised recommendations and private deals
+        </div>
+        <form class="art2">
+          <div class="art2i">Enter Email Address</div>
+          <di class="art2ii">Subscribe </di>
+        </form>
+      </span>
+    </article>
+    <aside>
+      <div class="as">Compare and Book Cheap Flights from 1000+ airlines</div>
+      <div class="as1">
+        Cheap flight bookings for you are right here use this coupon code
+        “TWAIR” and get NGN 3000 OFF. Hurry UP!!
+      </div>
+      <div class="as2">Well, Travelwings is all here at your service.</div>
+      <div class="as3">
+        Fly fuss-free as you avail great offers on cheap flight bookings. Take
+        the traveller in you around the world and explore its majesty to the
+        fullest.
+      </div>
+    </aside>
+    <div class="dh">
+      <div class="dh1">Why book flights with Travelwings?</div>
+      <div class="dh2">
+        <input type="button" class="dp" />
+        <div>*One-stop destination for domestic and international flights</div>
+      </div>
+      <div class="dh3">
+        <input type="button" class="dp" />
+        <div>*Easy availability of tickets at competitive prices</div>
+      </div>
+      <div class="dh4">
+        <input type="button" class="dp" />
+        <div>*Flawless 24*7 customer support</div>
+      </div>
+      <div class="dh5">
+        <input type="button" class="dp" />
+        <div>*Secure bookings and Easy cancellation &amp; refund</div>
+      </div>
+      <div class="dh6">
+        <input type="button" class="dp" />
+        <div>*Get exclusive offers on special destinations regularly</div>
+      </div>
+    </div>
+    <h1>Hotels in Popular Location</h1>
+    <div class="mm">
+      <div class="mimg">Dubai</div>
+      <div class="img2">London</div>
+      <div class="img3">New York</div>
+    </div>
+    <div class="dl">
+      <div class="dli">Book Cheap Flights from Nigeria</div>
+      <div class="dlii">
+        We bring to the wanderlust of Nigeria a venue to book cheap flights when
+        one makes a flight booking online. Our online flight booking domain
+        caters to the needs of booking flights and traces down the cheapest
+        flights in the market to international destinations. We have everything
+        from cheap flight tickets to budget-friendly airplane tickets. Flight
+        booking to destinations across the world had never been this easier.
+      </div>
+      <div class="dliii">
+        So, make the most of your vacation with Travelwings and experience the
+        extraordinary with online flight booking now.
+      </div>
+    </div>
+    <footer>©Copyright 2023 CIVI. All Rights Reserved.</footer>
+  </body>
+</html>
